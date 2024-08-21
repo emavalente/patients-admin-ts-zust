@@ -5,6 +5,7 @@ export type Patient = {
   email: string;
   date: Date;
   symptoms: string;
+  image: string;
 };
 
-export type DraftPatient = Omit<Patient, "id">;
+export type DraftPatient = Omit<Patient, "id" | "image">;
